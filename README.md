@@ -1,5 +1,6 @@
-Machine shop simulator
-======================
+# Machine shop simulator
+
+[![Java CI with Gradle](../../workflows/Java%20CI%20with%20Gradle/badge.svg)](../../actions?query=workflow%3A%22Java+CI+with+Gradle%22)
 
 Some quite atrocious code from a quite dated data structures book that makes for an excellent refactoring exercise.
 
