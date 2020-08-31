@@ -136,8 +136,8 @@ public class MyInputStream {
         // define a MyInputStream object to input
         // from System.in and another to input from
         // the file utilities\MyInputStream.file
-        MyInputStream keyboard = new MyInputStream(), file = new MyInputStream(
-                "utilities/MyInputStream.file");
+        MyInputStream keyboard = new MyInputStream();
+        MyInputStream file = new MyInputStream("utilities/MyInputStream.file");
 
         System.out.println("Enter a boolean, an integer "
                 + "a double, a byte, a short, " + " and a string");
@@ -177,7 +177,7 @@ public class MyInputStream {
         // should throw end of file exception
         file.flushCurrentLine();
         try {
-            b = file.readBoolean();
+            file.readBoolean();
         } catch (MyInputException e) {
             System.out.println("MyInputException: " + e.getMessage());
         }

@@ -88,6 +88,9 @@ public class FileIoTests {
         }
         assertTrue("In file " + expectedOutputFile + " the files didn't end at the same time", 
                 expectedLine == null && actualLine == null);
+        
+        expectedReader.close();
+        actualReader.close();
     }
     
     @Test

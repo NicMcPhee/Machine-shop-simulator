@@ -15,7 +15,7 @@ public class SpecificationReader {
 
     private void readChangeOverTimes() {
         // input the change-over times
-        int changeOverTimes[] = new int[specification.getNumMachines()+1];
+        int[] changeOverTimes = new int[specification.getNumMachines()+1];
 
         System.out.println("Enter change-over times for machines");
         for (int j = 1; j <= specification.getNumMachines(); j++) {
