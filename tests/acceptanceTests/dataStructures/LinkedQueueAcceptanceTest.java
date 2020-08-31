@@ -13,10 +13,10 @@ public class LinkedQueueAcceptanceTest {
     public void sahniTest() {
         LinkedQueue q = new LinkedQueue(3);
         // add a few elements
-        q.put(new Integer(1));
-        q.put(new Integer(2));
-        q.put(new Integer(3));
-        q.put(new Integer(4));
+        q.put(Integer.valueOf(1));
+        q.put(Integer.valueOf(2));
+        q.put(Integer.valueOf(3));
+        q.put(Integer.valueOf(4));
 
         assertEquals(4, q.getRearElement());
         assertEquals(1, q.getFrontElement());
