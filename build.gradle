@@ -23,11 +23,11 @@ sourceSets {
 }
 
 dependencies {
-    implementation 'org.hamcrest:hamcrest-library:1.3'
     implementation 'org.slf4j:slf4j-simple:1.7.25'
-    testImplementation 'com.pholser:junit-quickcheck-core:0.8.1'
-    testImplementation 'com.pholser:junit-quickcheck-generators:0.8.1'
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
+    testImplementation 'org.hamcrest:hamcrest:2.2'
+    testImplementation 'com.pholser:junit-quickcheck-core:0.9.4'
+    testImplementation 'com.pholser:junit-quickcheck-generators:0.9.4'
 }
 
 run {
